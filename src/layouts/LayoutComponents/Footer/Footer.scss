@@ -1,0 +1,10 @@
+.group-footer-icon:hover .rotate-footer-icon {
+    transform: rotateY(180deg);
+    transition: 0.4s linear;
+}
+
+.group-footer-icon .rotate-footer-icon {
+    transition: 0.4s linear;
+    transform: rotateY(380deg);
+}
+

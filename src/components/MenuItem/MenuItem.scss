@@ -1,0 +1,70 @@
+
+@media (min-width: 1023px) {
+    .menu-list {
+        &:hover > a{
+            color:#FFA920;
+            border-color: #FFA920;
+        }
+    
+        &:hover > p{
+            color:#FFA920;
+            border-color: #FFA920;
+        }
+    
+        &:hover > div {
+            display: block;
+        }
+    }
+}
+
+.menu_item--active > a {
+    color: #FFA920;
+}
+
+
+.menu-title-header {
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        border-right: 2px solid currentColor;
+        border-top: 2px solid currentColor;
+        transform: rotate(135deg);
+        margin-right: 0.5em;
+        margin-left: 1.0em;
+    }
+}
+
+.menu-title-onClick {
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        border-right: 2px solid currentColor;
+        border-top: 2px solid currentColor;
+        transform: rotate(135deg);
+        margin-right: 0.5em;
+        margin-left: 1.0em;
+    }
+}
+
+.menu-title-sub {
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        border-right: 2px solid currentColor;
+        border-top: 2px solid currentColor;
+        transform: rotate(45deg);
+        margin-right: 1.5em;
+        margin-left: 1.0em;
+                
+        &:hover {
+            border-color: #FFA920;
+        }
+    }
+}
+

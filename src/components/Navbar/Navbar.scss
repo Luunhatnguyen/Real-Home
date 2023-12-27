@@ -1,0 +1,38 @@
+.menu-dropdown-list {
+    animation: growDown 200ms linear forwards;
+    transform-origin: top center;
+}
+
+.menu-dropdown {
+    animation: growDown 200ms linear forwards;
+    transform-origin: top center;
+}
+
+// .dropdown_menu_1 {
+//     @for $num from 0 through 10 {
+//         li {
+//             transform-origin: top center;
+//             animation: slideDown 400ms ($num * 60ms) linear forwards}
+//     }
+// }
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0.3);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+// @keyframes slideDown {
+//     0% { 
+//       opacity: 0;
+//       transform: translateY(-60px);
+//     }
+  
+//     100% {
+//       opacity: 1;
+//       transform: translateY(0);
+//     }
+//   }

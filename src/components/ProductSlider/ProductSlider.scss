@@ -1,0 +1,100 @@
+.product-img-swiper {
+    border-radius: 10px;
+
+    &:hover .swiper-slide-active {
+        transform: scale(1.15);
+        transition: all 0.3s linear;
+    }
+
+
+    &:hover .swiper-pagination-bullet {
+        opacity: 1 !important;
+        transition: all 0.1s linear;
+    }
+    &:hover .swiper-button-next,
+    &:hover .swiper-button-prev {
+        opacity: 1 !important;
+        transition: all 0.1s linear;
+    }
+
+    &:hover .swiper-button-next {
+        transform: translateX(305%);
+        transition: all 0.4s linear;
+
+    }
+    &:hover .swiper-button-prev {
+        transform: translateX(-305%);
+        transition: all 0.4s linear;
+
+    }
+
+    .swiper-wrapper {
+        border-radius: 10px;
+
+        .swiper-slide {
+            border-radius: 10px;
+        } 
+        
+        .swiper-slide-active {
+        transition: all 0.3s linear;
+
+        }
+    }
+
+    .swiper-button-prev {
+        bottom: var(--swiper-pagination-bottom, 8px);
+        top: calc(100% - 20px);
+        color: #fff;
+        opacity: 0;
+        transform: translateX(-330%);
+        &::after {
+            content: '⤍';
+            position: absolute;
+            font-size: 24px;
+            font-weight: 700;
+            z-index: 10;
+            cursor: pointer;
+            transition: all 0.3s linear;
+        }
+    }
+
+    .swiper-button-next {
+
+        bottom: var(--swiper-pagination-bottom, 8px);
+        top: calc(100% - 20px);
+        color: #fff;
+        opacity: 0;
+        transform: translateX(330%);
+        &::after {
+            content: '⤌';
+            position: absolute;
+            font-size: 24px;
+            font-weight: 700;
+            z-index: 10;
+            cursor: pointer;
+            transition: all 0.3s linear;
+        }
+    }
+
+    .swiper-button-disabled {
+        &::after {
+            opacity: 0.5;
+        }
+    }
+
+    .swiper-pagination {
+        
+        z-index: 1;
+        .swiper-pagination-bullet {
+            background-color: #fff;
+            opacity: 0;
+            border: 1px solid #fff;
+
+
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #000;
+        }
+    }
+}
